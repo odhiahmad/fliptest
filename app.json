@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "catatankeuangan",
-    "slug": "catatankeuangan",
+    "name": "fliptest",
+    "slug": "fliptest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
