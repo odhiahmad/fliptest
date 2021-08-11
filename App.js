@@ -1,7 +1,8 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
-import Beranda from './src/screen/Beranda';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import Transaksi from "./src/screen/Transaksi";
+import DetailTransaksi from "./src/screen/DetailTransaksi";
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -9,8 +10,15 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={Beranda}
+          name="Transaksi"
+          component={Transaksi}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="DetailTransaksi"
+          component={DetailTransaksi}
           options={{
             headerShown: false,
           }}
@@ -19,4 +27,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
